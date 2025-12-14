@@ -1,0 +1,66 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feliz Aniversário ❤️</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- CORAÇÕES -->
+  <div class="hearts" id="hearts"></div>
+
+  <!-- MÚSICA -->
+ <div class="music-player">
+<button id="musicBtn" onclick="toggleMusic()">🎵 Tocar Música romântica</button>
+</div>
+<audio id="music" src="music/musicar.mp3" loop></audio>
+
+  <header>
+    <h1>Feliz Aniversário, Babys 💖</h1>
+    <p>Isso é só um pedacinho do que sinto por você</p>
+  </header>
+
+  <section class="section">
+    <h2>Você ✨</h2>
+    <div class="gallery">
+      <div class="card"><img src="img/ela1.jpeg"><button onclick="openPopup('t1')">Clique aqui</button></div>
+      <div class="card"><img src="img/ela2.jpeg"><button onclick="openPopup('t2')">Clique aqui</button></div>
+      <div class="card"><img src="img/ela3.jpeg"><button onclick="openPopup('t3')">Clique aqui</button></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Nós 💑</h2>
+    <div class="gallery">
+      <div class="card"><img src="img/nos1.jpeg"><button onclick="openPopup('t4')">Clique aqui</button></div>
+      <div class="card"><img src="img/nos2.jpeg"><button onclick="openPopup('t5')">Clique aqui</button></div>
+      <div class="card"><img src="img/nos3.jpeg"><button onclick="openPopup('t6')">Clique aqui</button></div>
+    </div>
+  </section>
+
+  <section class="section">
+  <h2>Uma carta pra você 💌</h2>
+
+  <div class="letter" onclick="openLetter()">
+    📩 Clique para abrir
+
+  </div>
+</section>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">×</span>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="scripts/popups.js"></script>
+<!-- CORAÇÃO GIGANTE -->
+<div id="bigHeart" class="big-heart hidden">
+  <div class="heart-shape">❤️</div>
+  <p>Eu te amo</p>
+</div>
+</body>
+</html>
