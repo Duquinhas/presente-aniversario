@@ -242,10 +242,11 @@ transition:.3s;
     padding: 12px;
   }
 
-  .card img {
-    height: 240px;
-    object-fit: cover; /* MELHOR PARA CELULAR */
-  }
+ .card img {
+  height: auto;          /* deixa a imagem definir a altura */
+  max-height: 360px;     /* limite pra não ficar gigante */
+  object-fit: contain;   /* nunca corta */
+}
 
   .card button {
     font-size: 1rem;
