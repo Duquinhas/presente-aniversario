@@ -210,3 +210,80 @@ transition:.3s;
   from { opacity: 0; }
   to { opacity: 1; }
 }
+@media (max-width: 768px) {
+
+  header {
+    padding: 35px 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 35px 15px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: auto;
+    padding: 12px;
+  }
+
+  .card img {
+    height: 240px;
+    object-fit: cover; /* MELHOR PARA CELULAR */
+  }
+
+  .card button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .letter {
+    width: 90%;
+    height: 160px;
+    font-size: 1.1rem;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 25px;
+    font-size: 1rem;
+  }
+
+  .close {
+    font-size: 2rem;
+  }
+
+  .music-player {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  #musicBtn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .big-heart p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .heart-shape {
+    font-size: 110px;
+  }
+}
